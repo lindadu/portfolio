@@ -1,0 +1,197 @@
+/****************************************************************************
+ * styles.css
+ ***************************************************************************/
+
+* {
+margin: 0;
+}
+
+a:link, a:visited {
+color: inherit;
+text-decoration: none;
+}
+
+a:hover {
+color: inherit;
+text-decoration: none;
+text-style: bold;
+}
+
+html, body {
+background: #f7f2de;
+
+/*background: #faf8ee;*/
+height: 100%;
+}
+
+.container {
+align: center;
+min-height: 100%;
+width: 770px;
+margin: 0 auto 0;
+}
+
+.project_container {
+align: center;
+min-height: 100%;
+width: 605px;
+margin: 0 auto -7em;
+}
+
+.about_container {
+align: center;
+min-height: 100%;
+width: 645px;
+margin: 0 auto -7em;
+}
+
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+ul {
+list-style: none; }
+
+#title {
+text-align: center;
+padding-top: 170px;
+font-family: "Abril Fatface", serif;
+font: 400 92px/84px Abril Fatface;
+}
+
+#subtitle {
+color: #222;
+text-align: left;
+font: 300 18px/24px "open sans";
+font-family: "open sans", serif;
+font-weight: 100;
+font-size: 20px;
+margin-top: 10px;
+}
+
+#wrapper {
+width: 950 px;
+overflow: hidden;
+}
+
+#project_wrapper {
+width: 950 px;
+overflow: hidden;
+margin-top: 10px;
+}
+
+#blurb {
+color: #666;
+float: left;
+font: 400 13px/21px "open sans";
+font-size: 14px;
+margin: 30px 50px 0 0;
+width: 450px;
+}
+
+#navigation {
+text-transform: uppercase;
+color: #666;
+font: 400 13px/21px "open sans";
+font-size: 14px;
+margin: 30px 50px 0 0;
+width: 250px;
+overflow: hidden;
+padding-top: 15px;
+}
+
+#page1 {
+background: #A1E8D9 /*#A32500*/;
+height: 1200px;
+}
+
+#page2 {
+background: #FF712C;
+/*background: #2B2922;
+background-image: url('/img/ios-linen.jpg');*/
+height: 1200px;
+}
+
+/*#page3 {
+background: #BAB293;
+height: 1200px;
+} */
+
+#up {
+text-align: right;
+text-transform: uppercase;
+color: black;
+font: 400 13px/21px "open sans";
+font-size: 14px;
+overflow: hidden;
+margin-top: 40px;
+}
+
+#about_blurb {
+float: left;
+font: 400 13px/21px "open sans";
+font-size: 14px;
+margin: 30px 0px 0 0;
+text-align: justify;
+}
+
+#about_title {
+text-align: center;
+padding-top: 130px;
+font-family: "open sans", serif;
+font: 400 92px/84px Abril Fatface;
+}
+
+#project_title {
+text-align: center;
+padding-top: 100px;
+font-family: "open sans", serif;
+font: 400 92px/84px Abril Fatface;
+}
+
+#image {
+text-align:center;
+margin-top: 35px;
+width: 260px;
+float: left;
+}
+
+#image2 {
+text-align: center;
+margin-top: 35px;
+margin-left: 50px;
+width: 260px;
+float: right;
+overflow: hidden;
+}
+
+#project_name {
+text-transform: uppercase;
+font: 400 13px/21px "open sans";
+text-style: bold;
+font-size: 14px;
+width: 250px;
+overflow: hidden;
+padding-top: 10px;
+}
+
+#project_info {
+text-align: justify;
+color: #222;
+font: 400 13px/21px "open sans";
+font-size: 14px;
+margin-top: 10px;
+}
+
+#project_blurb {
+text-align: center;
+color: #383838;
+font-family: "Playfair Display",serif;
+font-style: italic;
+font-size: 14px;
+margin-top: 10px;
+}
