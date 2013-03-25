@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Linda Du </title>
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+                $(".contactLink").click(function(){
+                    if ($("#contactForm").is(":hidden")){
+                        $("#contactForm").slideDown("slow");
+                    }
+                    else{
+                        $("#contactForm").slideUp("slow");
+                    }
+                });
+            });
+            function closeForm(){
+                $("#messageSent").show("slow");
+                setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+           }
+
+  $(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           var d = document.createElement("div");
+        d.style.height = "101%";
+        d.style.overflow = "hidden";
+        document.body.appendChild(d);
+        window.scrollTo(0,scrollToM);
+        setTimeout(function() {
+        d.parentNode.removeChild(d);
+            }, 10);
+           return false;
+         });
+      }
+    }
+    });
+    
+    $("a[href='#top']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+    });
+    
+  });
+  /*! Smooth Scroll - v1.4.5 - 2012-07-22
+  * Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
+  
+  
+  
+  </script>
+  
+  <body>
+    
+    <div class="container">
+    <div id="title">
+      Linda Xiaoting Du
+    </div>
+    
+    <div id="subtitle">
+    A sophomore at Harvard studying computer science & statistics.
+    </div>
+    
+    <div id="wrapper">
+    <div id="blurb">
+    <p>
+    Hello! I'm Linda. I originally come from St. Louis, but currently reside in Cambridge. I'm in love with creating beautiful and useful things. In my spare time, I like to look at stars, play go (weiqi), eat thai food, and play piano.
+    </p>
+    </div>
+    
+    <div id="navigation">
+      <ul>
+      <li><a href="#about">* here's more about me</a></li>  	
+      <li><a href="#projects">* projects i'm working on</a></li>
+      <li><a href="mailto:xlindadu@gmail.com">* Reach out via Email </a></li>
+      <li><a href="https://github.com/lindadu" id="github">* Fork me on GitHub</a></li>				
+      </ul>
+    </div>
+    </div>
+    </div>
+    
+    <div id="page1">
+    <a id="about"></a>
+      
+    <div class="about_container">
+    <div id="about_title">
+      More About Me
+    </div>
+    
+    <div id="subtitle">
+    Hmm... Here's the longer version about me.
+    </div>
+    
+    <div id="about_blurb">
+    <p>Hello!  I'm Linda.  I was born in August in snowy Minnesota, but I grew up in the suburbs of St. Louis, Missouri.  Regardless of the state of my life, food never fails to make me happy.  My favorite color is white.  Music takes over my life periodically.  I have a deep obsession with Grey's Anatomy and Lord of the Rings. </p>
+    
+    <p>When I entered college, I dabbled in economics, psychology, and applied mathematics.  Now, I am a sophomore living in Pforzheimer house and concentrating in Computer Science with a secondary in Statistics. On campus, I am heavily involved with Smart Woman Securities, an all-female finance organization. </p>
+    
+    <p>I love typography and anything beautiful.  For instance, see this <a href="http://hellohappy.org/beautiful-web-type/" id="showcase">showcase</a>, which inspired my design.  I am most interested in building applications that make life simpler and more intuitive. I am also fascinated by the idea of machine learning and artificial intelligence. </p>
+    
+    
+    <div id = "up">
+      <a href="#top"> back to top </a></li>
+    </div> 
+    
+    </div>   
+    
+    </div>
+      
+    </div>
+
+    <div id="page2">
+    <a id="projects"></a>
+      
+    
+      
+    <div class="project_container">
+    <div id="project_title">
+      Some Projects
+    </div>
+    
+    <div id="subtitle">
+    Take a look at what I'm working on.
+    </div>
+    
+    <div id="project_wrapper"> 
+    <div id="image">
+    <div id="project_name">
+    <a href="#project">meetr: automatic scheduler &rarr;</a>
+    </div>
+    
+    <div id="project_info">
+    A website that automatically compares calendars and schedules meetings within the designated time and date range based on availability.
+    </div>
+    
+    <div id="project_blurb">
+    Google Calendar API, Google AuthSub, PHP, JavaScript, HTML, CSS
+    </div>
+    </div>
+    
+    <div id="image2">
+    <div id="project_name">
+    <a href="http://www.harvardsws.org/">smart woman securities &rarr;</a>
+    </div>
+    
+    <div id="project_info">
+    A useful and functional redesign of the Harvard Smart Woman Securities web-site.
+    </div>
+    
+    <div id="project_blurb">
+    PHP, JavaScript, jQuery, HTML, CSS
+    </div>
+    </div>
+    </div>
+    
+    <div id="wrapper">
+    <div id="image"> 
+    <div id="project_name">
+    <a href="http://www.hypeaccess.com/">hype access &rarr;</a>
+    </div>
+    
+    <div id="project_info">
+    A beautiful concert photography and review website.
+    </div>
+    
+    <div id="project_blurb">
+    Wordpress (Customized), HTML, CSS
+    </div>
+    </div>
+    </div>
+    <div id = "up">
+      <a href="#top"> back to top </a></li>
+    </div> 
+    </div>
+    
+    </div>
+    </div>
+      
+    </div>
+      
+    </div>	
+  </body>
+</html>
